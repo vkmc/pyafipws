@@ -64,7 +64,10 @@ TIPO_CLAVE = {'CUIT': 80, 'CUIL': 86, 'CDI': 86, 'DNI': 96, 'Otro': 99}
 DEBUG = True
 
 URL = "http://www.afip.gob.ar/genericos/cInscripcion/archivos/apellidoNombreDenominacion.zip"
-URL_API = "https://soa.afip.gob.ar/"
+# reeamplazamos por aws para resolver error al pedir constancia desde servidores fuera de argentina
+# mas info aca
+# URL_API = "https://soa.afip.gob.ar/"
+URL_API = "https://aws.afip.gob.ar/"
 
 
 class PadronAFIP():
